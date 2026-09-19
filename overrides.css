@@ -52,3 +52,5 @@
   -webkit-text-stroke: 1px #111b17;
   text-shadow: 0 2px 0 #6d8177, 0 4px 3px #14201a66;
 }
+
+.coach-card{display:flex;gap:12px;align-items:center;margin:0 0 24px;padding:14px;border:1px solid #c9d9d1;border-radius:6px;background:#eef5f0}.coach-card .eyebrow{margin-bottom:5px}.coach-card strong{display:block;font-size:11px;line-height:1.45}.coach-card button{flex:0 0 auto;white-space:nowrap;padding:9px 10px;font-size:11px}
