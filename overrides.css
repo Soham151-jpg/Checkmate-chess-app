@@ -1,0 +1,54 @@
+.square.legal::after {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  background: #f5cb5f8f;
+  box-shadow: inset 0 0 0 3px #fff0b1;
+  position: absolute;
+}
+
+/* Keep every rank exactly the same size, including the empty middle ranks. */
+.board {
+  grid-template-rows: repeat(8, minmax(0, 1fr));
+}
+
+.square {
+  min-width: 0;
+  min-height: 0;
+}
+
+.square.capture::after {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  border: 4px solid #f1a24e;
+  background: #c94f3c42;
+  position: absolute;
+}
+
+.square.legal:hover::after,
+.square.capture:hover::after { background: #f5d46bba; }
+
+.piece {
+  font-family: "Noto Sans Symbols 2", "Segoe UI Symbol", serif;
+  font-weight: 700;
+  transform: translateY(-1px);
+  transition: transform .12s ease, filter .12s ease;
+}
+
+.square:hover .piece {
+  transform: translateY(-3px);
+  filter: drop-shadow(0 5px 2px #15251c44);
+}
+
+.piece.white {
+  color: #fff8e7;
+  -webkit-text-stroke: 1.4px #364840;
+  text-shadow: 0 2px 0 #c8b98e, 0 4px 3px #17231d55;
+}
+
+.piece.black {
+  color: #26342f;
+  -webkit-text-stroke: 1px #111b17;
+  text-shadow: 0 2px 0 #6d8177, 0 4px 3px #14201a66;
+}

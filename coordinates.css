@@ -1,0 +1,15 @@
+.rank-label,
+.file-label {
+  position: absolute;
+  z-index: 3;
+  font: 700 clamp(8px, 1.25vw, 12px) "DM Mono", monospace;
+  pointer-events: none;
+}
+
+.rank-label { top: 5px; left: 6px; }
+.file-label { right: 6px; bottom: 4px; }
+
+.light .rank-label,
+.light .file-label { color: #356454; }
+.dark .rank-label,
+.dark .file-label { color: #e7d6ae; }
